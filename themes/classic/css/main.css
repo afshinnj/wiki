@@ -1,0 +1,74 @@
+/* CSS Document */
+body{
+	font-family:Tahoma, Geneva, sans-serif !important;
+	padding-bottom:10px;
+	color:#000 !important;
+	background: url(../images/logo%20bg.png) #F2F2F2;
+	direction:rtl;
+	padding-top:20px;
+}
+.rtl{
+	direction:rtl !important;
+	}
+.ltr{
+	direction:ltr !important;
+}
+.container{
+	border:1px solid #62AFE0;
+	border-radius:5px;
+	background:#FFF;
+	}
+.navbar-default{
+	background-color:#CC3333 !important;
+	border:1px solid #910e0e !important;
+	color: #000 !important; 
+}
+.navbar-brand{
+	color: #000 !important;
+	}
+.footer{
+	border-top:1px dotted #62AFE0;
+	border-radius:0 !important;
+	}
+	
+.panel > .portlet-decoration {
+
+	color: #fff;
+	background-color: #428bca;
+	border-color: #428bca;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+} 
+.panel > .portlet-content{
+	padding: 3px;
+	box-sizing: border-box;
+}
+
+.operations{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.operations li {
+	padding: 5px;
+	
+	border-bottom: 1px solid #9bcef7;
+}
+.operations li:HOVER{
+		background-color:#9bcef7; 
+		cursor: pointer;
+}
+.operations li:LAST-CHILD{
+	border:none;
+}
+.operations a {
+	text-decoration: none;
+	
+}
+.dir-ltr{
+	direction: ltr !important;
+	
+}
+	
