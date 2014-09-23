@@ -47,7 +47,8 @@
 			'items'=>array(
 				array('label'=>'مدیریت', 'url'=>array('/admin')),
 				array('label'=>'ایجاد کاربر', 'url'=>array('/user.html')),
-				array('label'=>'ایجاد بخش', 'url'=>array('/section.html')),
+				array('label'=>'ایجاد گروه', 'url'=>array('/section.html')),
+				array('label'=> 'ایجاد زیر گروه', 'url' => array('/subSection.html')),
 				array('label'=>'نوشتن مقاله', 'url'=>array('/article.html')),
 				
 				array('label'=>'خروج ('.Yii::app()->user->name.')', 'url'=>array('/logout'), 'visible'=>!Yii::app()->user->isGuest)

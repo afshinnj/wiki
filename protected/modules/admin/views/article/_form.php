@@ -26,16 +26,6 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'text'); ?>
 		<?php echo $form->textArea($model,'text',array('rows'=>6, 'cols'=>50, 'class'=>'redactor_content')); ?>
-        <?php /* $this->widget('ext.redactor.ERedactorWidget',array(
-   			 'model'=>$model,
-    		 'attribute'=>'text',
-			 'options'=>array(
-	  		'imageUpload'=>'article',
-				'imageUploadErrorCallback'=>new CJavaScriptExpression(
-					'function(obj,json) { alert(json.error); }'
-				),
-			),
-));*/?>
 		<?php echo $form->error($model,'text'); ?>
 	</div>
 

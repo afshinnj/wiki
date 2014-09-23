@@ -1,17 +1,5 @@
 <?php
 
-/**
- * This is the model class for table "{{section}}".
- *
- * The followings are the available columns in table '{{section}}':
- * @property integer $id
- * @property string $title
- * @property string $create_time
- * @property string $update_time
- *
- * The followings are the available model relations:
- * @property Article[] $articles
- */
 class Section extends My_ActiveRecord
 {
 	/**

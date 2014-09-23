@@ -71,7 +71,8 @@ return array(
 				'user' => array('admin/user/index','urlSuffix'=>'.html'),
 				'admin' => array('admin/admin','urlSuffix'=>'.html'),
 				'article' => array('admin/article','urlSuffix'=>'.html'),
-				'section' => array('admin/section','urlSuffix'=>'.html'),
+				'section' => array('admin/Section','urlSuffix'=>'.html'),
+				'subSection' => array('admin/Collection','urlSuffix'=>'.html'),
 				'imageUpload' => array('admin/article/upload','urlSuffix'=>'.html'),
 				
 				

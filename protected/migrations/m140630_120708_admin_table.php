@@ -27,7 +27,17 @@ class m140630_120708_admin_table extends CDbMigration
 			),
 				'ENGINE=InnoDB'
 		);
-		
+		$this->createTable(
+				'{{sub_section}}',
+				array(
+						'sub_section_id' => 'pk',
+						'main_section_id' =>'int(11) NOT NULL',
+						'sub_section_title' => 'string NOT NULL',
+						'create_time' => 'datetime NOT NULL',
+						'update_time' => 'datetime NOT NULL',
+				),
+				'ENGINE=InnoDB'
+		);		
 		$this->createTable(
 			'{{article}}',
 			array(
@@ -43,19 +53,26 @@ class m140630_120708_admin_table extends CDbMigration
 		);
 		
 		 $this->addForeignKey("fk_sec_article", "{{article}}", "section_id", "{{section}}", "id", "CASCADE", "RESTRICT");
+		 $this->addForeignKey("fk_coll_sec", "{{sub_section}}", "main_section_id", "{{section}}", "id", "CASCADE", "RESTRICT");
 	}
 
 	public function down()
 	{
 		$this->truncateTable('{{user}}');
-		$this->truncateTable('{{section}}');
-		$this->truncateTable('{{article}}');
-		
 		$this->dropTable('{{user}}');
-			
-		$this->dropTable('{{section}}');
-			
+		
+		$this->truncateTable('{{article}}');
 		$this->dropTable('{{article}}');
+			
+		$this->truncateTable('{{sub_section}}');
+		$this->dropTable('{{sub_section}}');	
+				
+		$this->truncateTable('{{section}}');
+		$this->dropTable('{{section}}');
+		
+
+		
+
 	}
 
 }

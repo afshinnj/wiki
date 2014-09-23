@@ -112,11 +112,7 @@ class User extends My_ActiveRecord
 	 */
 	public function hashPassword($password)
 	{
-
-		$salt = '$2a$13$43p2SQMbdj'.$password.'hjRdxTFZZVEOEfJEWkKyS3LTg36reWDer6SrXJ1YMai'.md5($password);
-		$salt_1 = '9iwUAQb!BqRYJY3N4urC!TzX9%dFwiChxmLRK!UHcKVTqZ9QG3kvpA4pRZXwqOn&mi*F%&3b9VhFxSyKIlD&b$RQZx5gL!zbBbgl';
-		$pass = sha1($salt.$password.$salt_1);
-		return CPasswordHelper::hashPassword($pass);
+		return CPasswordHelper::hashPassword($password);
 	}
 	
 	/**
@@ -126,12 +122,7 @@ class User extends My_ActiveRecord
 	 */
 	public function validatePassword($password)
 	{
-
-		$salt = '$2a$13$43p2SQMbdj'.$password.'hjRdxTFZZVEOEfJEWkKyS3LTg36reWDer6SrXJ1YMai'.md5($password);
-		$salt_1 = '9iwUAQb!BqRYJY3N4urC!TzX9%dFwiChxmLRK!UHcKVTqZ9QG3kvpA4pRZXwqOn&mi*F%&3b9VhFxSyKIlD&b$RQZx5gL!zbBbgl';
-		$pass = sha1($salt.$password.$salt_1);
-		return  CPasswordHelper::verifyPassword($pass, $this->password);
-
+		return  CPasswordHelper::verifyPassword($password, $this->password);
 	}
 	/**
 	 * Returns the static model of the specified AR class.

@@ -26,20 +26,20 @@ return
 		'Update'=>'بروز رسانی',
 		'Manage'=>'مدیریت',
 		
-		'Sections' => 'بخش ها',
-		'Create Section' => 'ایجاد بخش',
-		'Manage Section'=> 'مدیریت بخش',
+		'Sections' => 'گروه ها',
+		'Create Section' => 'ایجاد گروه',
+		'Manage Section'=> 'مدیریت گروه',
 		
 		'ID'=>'شناسه',
 		'Title' => 'عنوان',
 		
-		'List Section' =>'لیست بخش ها',
-		'Manage Section' =>'مدیریت بخش ها',
-		'Manage Sections' =>'مدیریت بخش ها',
+		'List Section' =>'لیست گروه ها',
+		'Manage Section' =>'مدیریت گروه ها',
+		'Manage Sections' =>'مدیریت گروه ها',
 		
 		'View Section'=>'مشاهده جزئیات',
-		'Update Section' => 'ویرایش بخش',
-		'Delete Section' => 'حذف بخش',
+		'Update Section' => 'ویرایش گروه',
+		'Delete Section' => 'حذف گروه',
 		
 		'Articles'=>'مقاله ها', 
 		'Create Article' => 'مقاله جدید',
@@ -58,6 +58,14 @@ return
 			
 		'Username' => 'نام کاربری',
 		'First Name' => 'نام',
-		'Last NAme' => 'نام خانوادگی'
+		'Last NAme' => 'نام خانوادگی',
 		
+		'Main Section' =>'بخش',
+		'Sub Section Title' => 'عنوان',
+		'Create Collection' =>'ایجاد زیر گروه',
+		'Collections' => 'گروه ها',
+		'List Collection' => 'لیست زیر گروه ها',
+		'Delete Collection' => 'حذف',
+		'Update Collection' => 'ویرایش زیر گروه'
+			
 	);
