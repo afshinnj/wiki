@@ -36,18 +36,17 @@ class SiteController extends Controller
 		
 		$article = new Article;
 		
-		$dataProvider=new CActiveDataProvider('Article', array(
-			'criteria' => array(
-				'with' => array('section'),
-				'order' => 't.create_time DESC'
-			)
+		$dataProvider=new CActiveDataProvider('Section', array(
+				'criteria' => array(
+						'with' => array('collections'),
+						'order' => 't.create_time ASC',
+				)
 		));
-		
-		$this->render('index',
+		$this->render('post',
 					   array(
 							'sec' => $section->Section, 
-							'dataProvider' => $dataProvider,
 							'article' => $article->Article,
+					   		'dataProvider' => $dataProvider
 							));
 	}
 

@@ -46,6 +46,7 @@ class m140630_120708_admin_table extends CDbMigration
 				'text' => 'text',
 				'full_text' =>'text',	
 				'section_id' => 'int(11) NOT NULL',
+				'sub_sectionId' => 'int(11) NOT NULL',
 			    'create_time' => 'datetime NOT NULL',
 				'update_time' => 'datetime NOT NULL',
 			),
@@ -53,6 +54,7 @@ class m140630_120708_admin_table extends CDbMigration
 		);
 		
 		 $this->addForeignKey("fk_sec_article", "{{article}}", "section_id", "{{section}}", "id", "CASCADE", "RESTRICT");
+		 $this->addForeignKey("fk_subsec_article", "{{article}}", "sub_sectionId", "{{sub_section}}", "sub_section_id", "CASCADE", "RESTRICT");
 		 $this->addForeignKey("fk_coll_sec", "{{sub_section}}", "main_section_id", "{{section}}", "id", "CASCADE", "RESTRICT");
 	}
 

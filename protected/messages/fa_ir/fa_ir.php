@@ -47,7 +47,7 @@ return
 		'Manage Articles'=> 'مدیریت مقاله ها',
 		'List Article'=>'لیست مقاله ها',
 		'Text' => 'متن',
-		'Section' => 'بخش',
+		'Section' => 'گروه',
 		'Update Article' => 'ویرایش مقاله',
 		'Delete Article' => 'حذف مقاله',
 		'View Article' => 'مشاهده مقاله',
@@ -66,6 +66,7 @@ return
 		'Collections' => 'گروه ها',
 		'List Collection' => 'لیست زیر گروه ها',
 		'Delete Collection' => 'حذف',
-		'Update Collection' => 'ویرایش زیر گروه'
+		'Update Collection' => 'ویرایش زیر گروه',
+		'Sub Section' => 'زیر گروه',
 			
 	);

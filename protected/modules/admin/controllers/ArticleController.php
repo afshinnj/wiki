@@ -50,6 +50,7 @@ class ArticleController extends My_Controller
 	{
 		$model=new Article;
 		$Section = new Section;
+		$subSection = new Collection();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -62,7 +63,8 @@ class ArticleController extends My_Controller
 
 		$this->render('create',array(
 			'model'=>$model,
-			'section' => $Section->Sections
+			'section' => $Section->Sections,
+			'subSection' => $subSection->subSections,
 		));
 	}
 

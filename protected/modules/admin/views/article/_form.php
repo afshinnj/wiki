@@ -34,6 +34,12 @@
 		<?php echo $form->dropDownList($model,'section_id',$section); ?>
 		<?php echo $form->error($model,'section_id'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'sub_sectionId'); ?>
+		<?php echo $form->dropDownList($model,'sub_sectionId',$subSection); ?>
+		<?php echo $form->error($model,'sub_sectionId'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t($this->t,'Create') : Yii::t($this->t,'Save')); ?>

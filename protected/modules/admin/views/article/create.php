@@ -15,4 +15,4 @@ $this->menu=array(
 
 <h1><?php echo Yii::t($this->t,'Create Article')?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model,'section'=>$section)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,'section'=>$section,'subSection'=>$subSection)); ?>
